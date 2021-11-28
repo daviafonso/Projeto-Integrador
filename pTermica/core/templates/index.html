@@ -1,0 +1,228 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Projeto Integrador I - Pausas Térmicas</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+     <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="{% static 'css/tooplate-gymso-style.css' %}">
+
+</head>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="{{home.get.absolute_url}}">PROJETO INTEGRADOR I</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="{{home.get.absolute_url}}" class="nav-link smoothScroll">Home</a>
+                        <a href="{% url 'application' %}" rel="application" class="nav-link smoothScroll">Application</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+     <!-- HERO -->
+     <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
+
+            <div class="bg-overlay"></div>
+
+               <div class="container">
+                    <div class="row">
+
+                         <div class="col-lg-8 col-md-10 mx-auto col-12">
+                              <div class="hero-text mt-5 text-center">
+
+                                    <h6 data-aos="fade-up" data-aos-delay="300">quem cuida da saúde vive o melhor da vida!</h6>
+
+                                    <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">A importância das pausas térmicas</h1>
+
+                                    <a href="#feature" class="btn custom-btn mt-3" data-aos="fade-up" data-aos-delay="600">nos apoie</a>
+
+                                    <a href="#about" class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="700">saiba mais</a>
+                                   
+                              </div>
+                         </div>
+
+                    </div>
+               </div>
+     </section>
+
+
+     <section class="feature" id="feature">
+        <div class="container">
+            <div class="row">
+
+                <div class="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
+                    <h2 class="mb-3 text-white" data-aos="fade-up">Gostou do Site?</h2>
+
+                    <h6 class="mb-4 text-white" data-aos="fade-up">Clique em doação para ajudar manter e fazer futuras melhorias.</h6>
+
+                    <p data-aos="fade-up" data-aos-delay="200">Deixe um feedback no nosso <a rel="nofollow" href="projetointegrador1@hotmail.com" target="_parent">email</a> fale sua experiência deixe críticas e elogios.</p>
+
+                    <a href="#" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300" data-toggle="modal" data-target="#membershipForm">Faça uma doação hoje</a>
+                </div>
+
+                <div class="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12">
+                     <div class="about-working-hours">
+                          <div>
+
+                                <h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="500">devs:</h2>
+
+                               <strong class="d-block" data-aos="fade-up" data-aos-delay="600">BRUNO</strong>
+                               <strong class="d-block" data-aos="fade-up" data-aos-delay="600">DAVI</strong>
+                               <strong class="d-block" data-aos="fade-up" data-aos-delay="600">IVAN</strong>
+                               <strong class="d-block" data-aos="fade-up" data-aos-delay="600">JOÃO</strong>
+                               <strong class="d-block" data-aos="fade-up" data-aos-delay="600">PEDRO</strong>
+
+
+
+                               <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">EIXO DA COMPUTAÇÃO - UNIVESP</strong>
+
+                                <p data-aos="fade-up" data-aos-delay="800">Turma - 2020</p>
+
+                                <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Andradina - SP</strong>
+
+                                <p data-aos="fade-up" data-aos-delay="800">PI-01 - 2021</p>
+                               </div>
+                          </div>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+     <!-- ABOUT -->
+     <section class="about section" id="about">
+               <div class="container">
+                    <div class="row">
+
+                            <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
+                                <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Olá, você sabe o que é pausa térmica?</h2>
+
+                                <p data-aos="fade-up" data-aos-delay="400">Se você trabalha no interior de câmaras frias ou em condições semelhantes e há a oscilação de temperaturas, frio, quente, o seu Empregador deverá conceder uma pausa de 20 minutos a cada 01 hora e 40 minutos de trabalho, para que se previna a fadiga.</p>
+
+                                <p data-aos="fade-up" data-aos-delay="500">Art. 253 – Para os empregados que trabalham no interior das câmaras frigoríficas e para os que movimentam mercadorias do ambiente quente ou normal para o frio e vice-versa, depois de 1 (uma) hora e 40 (quarenta) minutos de trabalho contínuo, será assegurado um período de 20 (vinte) minutos de repouso, computado esse intervalo como de trabalho efetivo.</p>
+
+                            </div>
+
+                            <div class="ml-lg-auto col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="700">
+                                <div class="team-thumb">
+                                    <img src="{% static 'img/image03.jpg' %}" class="img-fluid" alt="Trainer">
+
+                                    <div class="team-info d-flex flex-column">
+
+                                        
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="800">
+                                <div class="team-thumb">
+                                    <img src="{% static 'img/image02.jpg' %}" class="img-fluid" alt="Trainer">
+
+                                    <div class="team-info d-flex flex-column">
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+               </div>
+     </section>
+
+
+
+     <!-- FOOTER -->
+     <footer class="site-footer">
+          <div class="container">
+               <div class="row">
+
+                    <div class="ml-auto col-lg-4 col-md-5">
+                        <p class="copyright-text">Copyright &copy; 2021 - Projeto Integrador I.
+                        
+                        <br>UNIVESP: <a href="https://univesp.br/">SITE</a></p>
+                    </div>
+
+                    <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
+                        <p class="mr-4">
+                            <i class="fa fa-envelope-o mr-1"></i>
+                            <a href="#">projetointegrador1@hotmail.com</a>
+                        </p>
+
+                        <p><i class="fa fa-phone mr-1"></i>+55 1020-3040</p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="membershipForm" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <h2 class="modal-title" id="membershipFormLabel">Formas de doação</h2>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <form class="membership-form webform" role="form">
+                <input type="text" class="form-control" name="nome" placeholder="Projeto Integrador">
+
+                <input type="email" class="form-control" name="PIX" placeholder=" PIX = projetointegrador1@hotmail.com">
+
+                
+            </form>
+          </div>
+
+          <div class="modal-footer"></div>
+
+        </div>
+      </div>
+    </div>
+
+     <!-- SCRIPTS -->
+     <script src="{% static 'js/jquery.min.js' %}"></script>
+     <script src="{% static 'js/bootstrap.min.js' %}"></script>
+     <script src="{% static 'js/aos.js' %}"></script>
+     <script src="{% static 'js/smoothscroll.js' %}"></script>
+     <script src="{% static 'js/custom.js' %}"></script>
+
+</body>
+</html>

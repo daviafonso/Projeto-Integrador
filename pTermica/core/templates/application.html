@@ -1,0 +1,77 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="br">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CALCULADORA DE PAUSAS TÉRMICAS</title>
+        <link rel="stylesheet" href="{% static 'css/calculadora.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+
+         <!-- MAIN CSS -->
+        <link rel="stylesheet" href="{% static 'css/tooplate-gymso-style.css' %}">
+
+     
+    
+    </head>
+    
+    <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+         <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg fixed-down">
+        <div clas></div>
+
+            <a class="navbar-brand" href="{% url 'home' %}">PROJETO INTEGRADOR I</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="{% url 'home' %} " class="nav-link smoothScroll">Home</a>
+                        <a href="{% url 'application' %}" class="nav-link smoothScroll">Application</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+        
+    
+        <div>
+        <main>
+            
+            <div class="container">
+                
+                <div class="title"> PAUSAS TÉRMICAS </div>
+                
+                <div class="input">
+                    
+                    <label>Entrada</label>
+                    <input type="time" id='entrada'>
+                
+                </div>
+                
+                <button id='calcular'> Calcular </button>
+
+                <div class="result" id='resultado'></div>
+
+            </div>
+
+            
+        
+        </main>
+    </div>
+
+        <script src="{% static './js/teste.js' %}"></script>
+    
+    </body>
+
+    </html>
